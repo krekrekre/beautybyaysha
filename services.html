@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            crossorigin
+            src="https://unpkg.com/react@18/umd/react.development.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+        ></script>
+        <title>Usluge - Beauty by Aysha</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+        <link rel="icon" type="image/jpg" href="./images/favicon.jpg">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="burger" onclick="showSidebar()">
+                <a href="#">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-menu"
+                    >
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </a>
+            </div>
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo.png"></a>
+            </div>
+            <div class="nav-links">
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()" class="hideSidebar">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="34"
+                            height="34"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-x"
+                        >
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </li>
+                    <li><a href="./index.html">Početna</a></li>
+                    <li><a href="./services.html">Usluge</a></li>
+                    <li><a href="./about.html">O nama</a></li>
+                    <li><a href="./contact.html">Kontakt</a></li>
+                </ul>
+                <ul class="spread">
+                    <li><a href="./index.html">Početna</a></li>
+                    <li><a href="./services.html">Usluge</a></li>
+                    <li><a href="./about.html">O nama</a></li>
+                    <li><a href="./contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="social-icons">
+                <a href="#">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-facebook"
+                    >
+                        <path
+                            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                        ></path></svg
+                ></a>
+                <a href="#">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-instagram"
+                    >
+                        <rect
+                            x="2"
+                            y="2"
+                            width="20"
+                            height="20"
+                            rx="5"
+                            ry="5"
+                        ></rect>
+                        <path
+                            d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                        ></path>
+                        <line
+                            x1="17.5"
+                            y1="6.5"
+                            x2="17.51"
+                            y2="6.5"
+                        ></line></svg
+                ></a>
+            </div>
+        </div>
+        <div class="about-us-top">
+            <div class="about-us-heading">
+                <h3>USLUGE</h3>
+            </div>
+        </div>
+        <div class="image-container">
+            <div class="image-box"><a href="./service.html?lice">
+            <img src="./images/feature1.jpg" />
+            <div class="overlay">Tretmani lica</div></a>
+            </div>
+            <div class="image-box"><a href="./service.html?depilacija">
+                <img src="./images/feature2.jpg" />
+                <div class="overlay">Depilacija</div></a>
+            </div>
+            <div class="image-box"><a href="./service.html?epilacija">
+                <img src="./images/feature3.jpg" />
+                <div class="overlay">Epilacija</div></a>
+            </div>
+        </div>
+      
+           
+       
+        <div class="footer" id="services-footer-margin">
+            <div class="footer-items">
+                <div class="footer-item">
+                    <div><a href="./services.html"><h4>Usluge</h4></a></div>
+                    <div class="footer-divider"></div>
+                    <ul>
+                        <li>Laser</li>
+                        <li>Skincare</li>
+                        <li>Permanent Makeup</li>
+                        <li>Eyebrow Shaping</li>
+                        <li>Lashes</li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <div><h4>Radno vreme</h4></div>
+                    <div class="footer-divider"></div>
+                    <ul>
+                        <li>Pon: 10h - 17h</li>
+                        <li>Uto - Pet: 12h - 20h</li>
+                        <li>Sub: 10h - 17h</li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <div><a href="./contact.html"><h4>Kontakt</h4></a></div>
+                    <div class="footer-divider"></div>
+                    <div>
+                        <ul>
+                            <li>Strahinjića Bana 34/3,</br> Belgrade, Serbia</li>
+                            <li>064/1789158</li>
+                            <li>test@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+                
+                <div class="footer-item">
+                    <div><h4>Pratite nas</h4></div>
+                    <div class="footer-divider"></div>
+                    <div class="footer-social-icons">
+                        <a href="#">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#1a1a1a"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-facebook"
+                            >
+                                <path
+                                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                                ></path></svg
+                        ></a>
+                        <a href="#">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#1a1a1a"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-instagram"
+                            >
+                                <rect
+                                    x="2"
+                                    y="2"
+                                    width="20"
+                                    height="20"
+                                    rx="5"
+                                    ry="5"
+                                ></rect>
+                                <path
+                                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                                ></path>
+                                <line
+                                    x1="17.5"
+                                    y1="6.5"
+                                    x2="17.51"
+                                    y2="6.5"
+                                ></line></svg
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024 Beauty By Aysha | Sva prava zadržana.</p>
+        </div>
+        <script src="sidebar.js"></script>
+    </body>
+</html>
